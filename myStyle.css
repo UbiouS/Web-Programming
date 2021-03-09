@@ -1,0 +1,14 @@
+.current-weather{
+    width: 28px;
+    height: 28px;
+}
+
+.img-main{
+    width: 28px;
+    height: 28px;
+}
+
+.main-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

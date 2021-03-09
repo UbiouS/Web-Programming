@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="" />
+    <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/001-windy-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/002-windy-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/003-windy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/004-wind.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/005-wind-sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/006-thermometer-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/007-sunset.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/008-sunrise.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/009-sun-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/010-sun.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/011-storm-5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/012-storm-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/013-storm-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/014-snowy-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/015-rain-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/016-rain-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/017-snowy-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/018-snowy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/019-snowflake.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/020-snow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/021-rain-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/022-rain-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/023-rain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/024-temperature-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/025-lightning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/026-hurricane.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/027-humidity.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/028-storm-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/029-storm-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/030-storm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/031-half-moon-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/032-half-moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/033-hail-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/034-hail-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/035-hail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/036-full-moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/037-thermometer-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/038-foggy-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/039-foggy-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/040-foggy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/041-fog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/042-thermometer-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/043-temperature.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/044-cloudy-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/045-cloudy-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/046-cloudy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/047-cloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/048-night.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/049-thermometer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/050-barometer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,19 +65,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oyFA7yYz2GIAHCx9GMGqv96Sih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -35,11 +98,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614250776941</updated>
-      <workItem from="1614250778109" duration="647000" />
+      <workItem from="1614250778109" duration="1295000" />
+      <workItem from="1614253926772" duration="695000" />
+      <workItem from="1615193645545" duration="1844000" />
+      <workItem from="1615320989602" duration="2363000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
