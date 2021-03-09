@@ -2,59 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/001-windy-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/002-windy-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/003-windy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/004-wind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/005-wind-sign.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/006-thermometer-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/007-sunset.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/008-sunrise.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/009-sun-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/010-sun.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/011-storm-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/012-storm-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/013-storm-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/014-snowy-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/015-rain-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/016-rain-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/017-snowy-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/018-snowy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/019-snowflake.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/020-snow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/021-rain-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/022-rain-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/023-rain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/024-temperature-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/025-lightning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/026-hurricane.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/027-humidity.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/028-storm-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/029-storm-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/030-storm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/031-half-moon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/032-half-moon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/033-hail-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/034-hail-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/035-hail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/036-full-moon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/037-thermometer-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/038-foggy-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/039-foggy-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/040-foggy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/041-fog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/042-thermometer-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/043-temperature.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/044-cloudy-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/045-cloudy-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/046-cloudy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/047-cloud.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/048-night.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/049-thermometer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/050-barometer.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +51,7 @@
       <workItem from="1614250778109" duration="1295000" />
       <workItem from="1614253926772" duration="695000" />
       <workItem from="1615193645545" duration="1844000" />
-      <workItem from="1615320989602" duration="2363000" />
+      <workItem from="1615320989602" duration="7070000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,10 @@
+.main-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .current-weather{
-    width: 28px;
-    height: 28px;
+    width: 64px;
+    height: 64px;
 }
 
 .img-main{
@@ -8,7 +12,24 @@
     height: 28px;
 }
 
-.main-block{
+.weather-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.secondary-weather{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px){
+    .secondary-weather{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-block{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
 }
