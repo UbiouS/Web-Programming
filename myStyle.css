@@ -1,18 +1,43 @@
+h4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.main-temperature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 600;
+}
+
 .main-block{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
 }
+.devide-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .current-weather{
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
 }
 
 .img-main{
-    width: 28px;
-    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 
 .weather-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
 }
@@ -20,6 +45,33 @@
 .secondary-weather{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+}
+
+.secondary-city {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+}
+.name-of-secondary-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+.divide-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.between-main-secondary{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.exit-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 @media (max-width: 600px){
