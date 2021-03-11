@@ -1,8 +1,9 @@
 body{
-    margin: 1.25% 4% 1.25% 4%;
+    margin: 1.25% 3% 1.25% 3%;
     font-family: "Times New Roman";
     color: lightslategrey;
 }
+
 
 ul{
     padding: 0;
@@ -10,7 +11,7 @@ ul{
 
 li{
     padding: 7px 5px 5px 1px;
-    margin: 9px;
+    margin-bottom: 10px;
     display: grid;
     color: white;
     background-color: lightslategrey;
@@ -44,7 +45,7 @@ h4{
 }
 
 .inside-text{
-    padding: 4px 5px 4px 5px;
+    width: 100%;
 }
 
 .wind-and-stuff {
@@ -58,6 +59,7 @@ h4{
     align-items: center;
     justify-content: center;
 }
+
 
 .add-city{
     display: flex;
@@ -141,7 +143,6 @@ input {
 
 .devide-main{
     display: grid;
-    margin: 25px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -217,6 +218,20 @@ input {
     .main-block{
         display: grid;
         grid-template-columns: 1fr;
+    }
 
+
+    .inside-text {
+        width: 100%;
+    }
+
+    .divide-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .between-main-secondary{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
