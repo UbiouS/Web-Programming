@@ -46,6 +46,7 @@ h4{
 
 .inside-text{
     width: 100%;
+    padding: 2px;
 }
 
 .wind-and-stuff {
@@ -220,6 +221,9 @@ input {
         grid-template-columns: 1fr;
     }
 
+    .input-line{
+        width: 100%;
+    }
 
     .inside-text {
         width: 100%;

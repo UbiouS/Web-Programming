@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-
+<link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+/>
 <head>
     <meta charset="UTF-8">
     <title>Basics</title>
@@ -58,250 +61,19 @@
 <section class="between-main-secondary">
     <div><h2>Избранное</h2></div>
     <div class="add-city">
-        <div class="line-for-city-display"><input class="input-line" type="text" name="city-name" placeholder="Добавить новый город"></div>
+        <div class="line-for-city-display"><input class="input-line" type="text" id="searchUser" name="city-name" placeholder="Добавить новый город"></div>
         <div>
-            <button class="plus-city">+</button>
+            <button class="plus-city" id="submit">+</button>
         </div>
     </div>
 
 </section>
 <section class="secondary-weather">
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Moscow</h4>
-                <div class="secondary-temperature">
-                    5°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/021-rain-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Helsinki</h4>
-                <div class="secondary-temperature">
-                    3°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/038-foggy-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Moscow</h4>
-                <div class="secondary-temperature">
-                    5°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/021-rain-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Helsinki</h4>
-                <div class="secondary-temperature">
-                    3°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/038-foggy-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Moscow</h4>
-                <div class="secondary-temperature">
-                    5°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/021-rain-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <div class="secondary-city">
-            <div class="name-of-secondary-block">
-                <h4>Helsinki</h4>
-                <div class="secondary-temperature">
-                    3°C
-                </div>
-                <div class="secondary-icon-display">
-                    <img class="weather-icon" src="svg/038-foggy-2.svg">
-                </div>
-                <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff">Broken clouds</div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff">1013 hpa</div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff">52%</div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff">[59.88, 30.42]</div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div id="content"></div>
 </section>
 
 </body>
+<script src="fetch.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
 </html>

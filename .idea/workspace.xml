@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CourSach.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CourSach.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
@@ -16,6 +22,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -32,9 +39,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -53,7 +62,13 @@
       <workItem from="1615193645545" duration="1844000" />
       <workItem from="1615320989602" duration="17725000" />
       <workItem from="1615400196409" duration="5799000" />
-      <workItem from="1615470414861" duration="3972000" />
+      <workItem from="1615470414861" duration="6137000" />
+      <workItem from="1617180591982" duration="704000" />
+      <workItem from="1617217825279" duration="2278000" />
+      <workItem from="1617285997005" duration="449000" />
+      <workItem from="1617292430390" duration="3661000" />
+      <workItem from="1617834943741" duration="3634000" />
+      <workItem from="1618326088663" duration="4345000" />
     </task>
     <servers />
   </component>
