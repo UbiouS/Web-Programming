@@ -10,7 +10,7 @@ ul{
 }
 
 li{
-    padding: 7px 5px 5px 1px;
+    padding: 7px 5px 5px 3px;
     margin-bottom: 10px;
     display: grid;
     color: white;
@@ -58,14 +58,14 @@ h4{
 .line-for-city-display{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
 .add-city{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    width: 100%;
+    grid-template-columns: 1fr 30px;
+    display: grid;
 }
 
 .secondary-temperature{
@@ -94,17 +94,6 @@ h4{
     justify-content: center;
 }
 
-input {
-    height: 30px;
-    width: 300px;
-    border-radius: 4px;
-    border: 0;
-    margin-right: 10px;
-    padding: 5px 5px 5px 15px;
-    background-color: #DCDCDC;
-    color: #808080;
-}
-
 .refresh-button {
     padding: 0;
     width: 190px;
@@ -121,6 +110,11 @@ input {
     justify-content: center;
     font-size: 100px;
     font-weight: 600;
+}
+
+.button-part{
+    display: grid;
+    align-content: center;
 }
 
 .plus-city{
@@ -144,12 +138,15 @@ input {
 
 .devide-main{
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
 .current-weather{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 4px;
     width: 130px;
     height: 130px;
@@ -168,6 +165,18 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.input-line{
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    border: 0;
+    margin-right: 10px;
+    padding: 5px 5px 5px 15px;
+    background-color: #DCDCDC;
+    color: #808080;
 }
 
 .weather-icon{
@@ -216,10 +225,13 @@ input {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .main-block{
         display: grid;
         grid-template-columns: 1fr;
     }
+
+
 
     .input-line{
         width: 100%;

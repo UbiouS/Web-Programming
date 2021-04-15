@@ -5,12 +5,49 @@ class UI {
     this.defaultCity = "London";
   }
 
+  getCurrentLocation() {
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude}}) => {
+            resolve({latitude, longitude});
+          },
+          (err) => {
+            console.error(err);
+            reject(err);
+          }, {enableHighAccuracy: true});
+    })
+  }
+
+  requestWeatherByLocation(){
+    this.getCurrentLocation().then(({latitude, longitude}) => {
+      Fetch.getByLocation(latitude, longitude).then(data => console.log(data))
+    })
+
+  }
+
+  clearUI() {
+    uiContainer.innerHTML = "";
+  }
+
+  saveToLS(data) {
+    localStorage.setItem("city", JSON.stringify(data));
+  }
+
+  getFromLS() {
+    if (localStorage.getItem("city" == null)) {
+      return this.defaultCity;
+    } else {
+      this.city = JSON.parse(localStorage.getItem("city"));
+    }
+
+    return this.city;
+  }
+
+  clearLS() {
+    localStorage.clear();
+  }
+
   populateUI(data) {
-    //de-structure vars
-
-    //add them to inner HTML
-
-    this.uiContainer.innerHTML = `     
+    this.uiContainer.innerHTML = `
             <div class="secondary-city">
             <div class="name-of-secondary-block">
                 <h4 class="card-title">${data.name}</h4>
@@ -21,14 +58,14 @@ class UI {
                     <img class="weather-icon" src="svg/038-foggy-2.svg">
                 </div>
                 <div class="exit-buttons">
-                    <button class="close-button">ͯ</button>
+                    <button class="close-button" onclick="this.clearLS()">ͯ</button>
                 </div>
             </div>
 
             <ul>
                 <li>
                     <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff"> Moderate breeze, 6.0 m/s, North-northwest</div>
+                    <div class="wind-and-stuff"> 6.0 m/s, North-northwest</div>
                 </li>
                 <li>
                     <div class="inside-text">Облачность</div>
@@ -53,25 +90,4 @@ class UI {
         `;
   }
 
-  clearUI() {
-    uiContainer.innerHTML = "";
-  }
-
-  saveToLS(data) {
-    localStorage.setItem("city", JSON.stringify(data));
-  }
-
-  getFromLS() {
-    if (localStorage.getItem("city" == null)) {
-      return this.defaultCity;
-    } else {
-      this.city = JSON.parse(localStorage.getItem("city"));
-    }
-
-    return this.city;
-  }
-
-  clearLS() {
-    localStorage.clear();
-  }
 }
