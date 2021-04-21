@@ -12,6 +12,7 @@ button.addEventListener("click", () => {
 
   ft.getCurrent(currentVal).then((data) => {
     //call a UI method//
+    console.log('fetch',data);
     ui.populateUI(data);
     //call saveToLS
     ui.saveToLS(data);
