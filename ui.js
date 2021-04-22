@@ -2,7 +2,7 @@ class UI {
     constructor() {
         this.uiContainer = document.getElementById("content");
         this.city;
-        this.defaultCity = "London";
+        this.defaultCity = ["London"];
     }
 
     getCurrentLocation() {
@@ -29,17 +29,30 @@ class UI {
     }
 
     saveToLS(data) {
-        localStorage.setItem("city", JSON.stringify(data));
+        let cityNames = this.getFromLS();
+        console.log(cityNames);
+        cityNames.push(data);
+        localStorage.setItem("city", JSON.stringify(cityNames));
     }
 
     getFromLS() {
-        if (localStorage.getItem("city" == null)) {
-            return this.defaultCity;
+        const cityNames = JSON.parse(localStorage.getItem("city")) ;
+        console.log('localStorage',cityNames);
+
+        if (!cityNames) {
+            localStorage.setItem("city", JSON.stringify([]));
+            return [];
         } else {
             this.city = JSON.parse(localStorage.getItem("city"));
         }
 
-        return this.city;
+        return cityNames;
+    }
+
+    deleteFromLS(cityName){
+        const cities = this.getFromLS();
+        const filteredCities = cities.filter(city => city !== cityName);
+        localStorage.setItem("city", JSON.stringify(filteredCities));
     }
 
     clearLS() {
@@ -47,6 +60,7 @@ class UI {
     }
 
     populateUI(data) {
+        console.log('cityCard',data);
         const template = document.querySelector('#temp');
 
         const favouriteNameElement = template.content.querySelector(".name-of-secondary-block h4")
@@ -60,7 +74,8 @@ class UI {
         const favouriteCoordinateElement = template.content.querySelector(".coord")
 
         favouriteNameElement.innerHTML = data.name;
-        favouriteTempElement.innerHTML = `${data.main.temp - 273, 15}°C`;
+        console.log(data.main);
+        favouriteTempElement.innerHTML = `${Math.round(data.main.temp)}°C`;
         favouriteIconElement.innerHTML = `<img src=" http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
 
 
@@ -76,8 +91,38 @@ class UI {
 
         clone.querySelector(".close-button").onclick = () => {
             newTemplate.removeChild(clone);
-            this.clearLS(data.name);
+            this.deleteFromLS(data.name);
         };
+    }
+
+    populateMainUI(data) {
+        const template = document.querySelector('#main');
+
+        const favouriteNameElement = template.content.querySelector(".name-of-secondary-block")
+        const favouriteTempElement = template.content.querySelector(".main-temperature");
+        const favouriteIconElement = template.content.querySelector(".main-icon-display");
+
+        const favouriteWindElement = template.content.querySelector(".main-city-wind");
+        const favouriteCloudElement = template.content.querySelector(".main-city-clouds");
+        const favouritePressureElement = template.content.querySelector(".main-city-pressure");
+        const favouriteHumidityElement = template.content.querySelector(".main-city-humidity");
+        const favouriteCoordinateElement = template.content.querySelector(".main-city-coord")
+
+        favouriteNameElement.innerHTML = data.name;
+        favouriteTempElement.innerHTML = `${Math.round(data.main.temp)}°C`;
+        favouriteIconElement.innerHTML = `<img src=" http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
+
+
+        favouriteWindElement.innerHTML = `${data.wind.speed} m/s,`;
+        favouriteCloudElement.innerHTML = `${data.weather[0].description}`;
+        favouritePressureElement.innerHTML = `${data.main.pressure} hpa`;
+        favouriteHumidityElement.innerHTML = `${data.main.humidity}%`;
+        favouriteCoordinateElement.innerHTML = `[${Number(data.coord.lat).toFixed(2)}, ${Number(data.coord.lon).toFixed(2)}]`;
+
+        const clone = template.content.querySelector('div').cloneNode(true);
+        const newTemplate = document.querySelector("#my-city");
+        newTemplate.appendChild(clone);
+
     }
 
 

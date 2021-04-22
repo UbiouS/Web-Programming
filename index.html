@@ -19,41 +19,42 @@
 
 </section>
 <section>
-    <div class="main-block">
-        <div>
-            <h1>Saint Petersburg</h1>
-            <div class="devide-main">
-                <div class="img-main">
-                    <img class="current-weather" src="svg/017-snowy-1.svg" width="40">
+    <div class="main-block" id="my-city" >
+<!--        <template id="main">-->
+            <div>
+                <h1 class="name-of-main-block"></h1>
+                <div class="devide-main">
+                    <div class="img-main">
+                        <img class="current-weather main-icon-display" width="40">
+                    </div>
+                    <div class="main-temperature">
+                    </div>
                 </div>
-                <div class="main-temperature">
-                    8°C
-                </div>
-            </div>
 
-        </div>
-        <ul>
-            <li>
-                <div class="inside-text">Ветер</div>
-                <div class="wind-and-stuff">Moderate breeze, 6.0 m/s, North-northwest</div>
-            </li>
-            <li>
-                <div class="inside-text">Облачность</div>
-                <div class="wind-and-stuff">Broken clouds</div>
-            </li>
-            <li>
-                <div class="inside-text">Давление</div>
-                <div class="wind-and-stuff">1013 hpa</div>
-            </li>
-            <li>
-                <div class="inside-text">Влажность</div>
-                <div class="wind-and-stuff">52%</div>
-            </li>
-            <li>
-                <div class="inside-text">Координаты</div>
-                <div class="wind-and-stuff">[59.88, 30.42]</div>
-            </li>
-        </ul>
+            </div>
+            <ul>
+                <li>
+                    <div class="inside-text">Ветер</div>
+                    <div class="wind-and-stuff main-city-wind"></div>
+                </li>
+                <li>
+                    <div class="inside-text">Облачность</div>
+                    <div class="wind-and-stuff main-city-clouds"></div>
+                </li>
+                <li>
+                    <div class="inside-text">Давление</div>
+                    <div class="wind-and-stuff main-city-pressure"></div>
+                </li>
+                <li>
+                    <div class="inside-text">Влажность</div>
+                    <div class="wind-and-stuff main-city-humidity"></div>
+                </li>
+                <li>
+                    <div class="inside-text">Координаты</div>
+                    <div class="wind-and-stuff main-city-coord"></div>
+                </li>
+            </ul>
+<!--        </template>-->
     </div>
 </section>
 <section class="between-main-secondary">

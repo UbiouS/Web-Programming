@@ -11,11 +11,10 @@ button.addEventListener("click", () => {
   const currentVal = search.value;
 
   ft.getCurrent(currentVal).then((data) => {
-    //call a UI method//
-    console.log('fetch',data);
+    //call a UI method
     ui.populateUI(data);
     //call saveToLS
-    ui.saveToLS(data);
+    ui.saveToLS(data.name);
   });
 });
 
@@ -23,5 +22,12 @@ button.addEventListener("click", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   const dataSaved = ui.getFromLS();
-  ui.populateUI(dataSaved);
+  const citiesPromises = [];
+  dataSaved.forEach((city)=>{
+    citiesPromises.push(ft.getCurrent(city))
+  })
+
+  Promise.all(citiesPromises).then((cities)=>{
+    cities?.forEach((city) => ui.populateUI(city));
+  })
 });
