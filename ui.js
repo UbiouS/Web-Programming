@@ -18,8 +18,8 @@ class UI {
     }
 
     requestWeatherByLocation() {
-        this.getCurrentLocation().then(({latitude, longitude}) => {
-            Fetch.getByLocation(latitude, longitude).then(data2 => console.log(data2))
+        return this.getCurrentLocation().then(({latitude, longitude}) => {
+            return Fetch.getByLocation(latitude, longitude)
         })
 
     }
@@ -30,15 +30,17 @@ class UI {
 
     saveToLS(data) {
         let cityNames = this.getFromLS();
-        console.log(cityNames);
-        cityNames.push(data);
-        localStorage.setItem("city", JSON.stringify(cityNames));
+        console.log(data);
+        if(cityNames.find(city => city === data) === data){
+            return new Error("City already exists")
+        }
+        else {
+            localStorage.setItem("city", JSON.stringify(cityNames));
+        }
     }
 
     getFromLS() {
         const cityNames = JSON.parse(localStorage.getItem("city")) ;
-        console.log('localStorage',cityNames);
-
         if (!cityNames) {
             localStorage.setItem("city", JSON.stringify([]));
             return [];
@@ -60,7 +62,6 @@ class UI {
     }
 
     populateUI(data) {
-        console.log('cityCard',data);
         const template = document.querySelector('#temp');
 
         const favouriteNameElement = template.content.querySelector(".name-of-secondary-block h4")
@@ -74,7 +75,6 @@ class UI {
         const favouriteCoordinateElement = template.content.querySelector(".coord")
 
         favouriteNameElement.innerHTML = data.name;
-        console.log(data.main);
         favouriteTempElement.innerHTML = `${Math.round(data.main.temp)}°C`;
         favouriteIconElement.innerHTML = `<img src=" http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
 
@@ -96,34 +96,22 @@ class UI {
     }
 
     populateMainUI(data) {
-        const template = document.querySelector('#main');
+        const title = document.querySelector("#name-of-main-block");
+        const icon = document.querySelector("#main-icon-display");
+        const temp = document.querySelector(".main-temperature");
+        const wind = document.querySelector(".main-city-wind")
+        const description = document.querySelector(".main-city-clouds")
+        const hpa = document.querySelector(".main-city-pressure")
+        const humidity = document.querySelector(".main-city-humidity")
+        const coordinants = document.querySelector(".main-city-coord")
 
-        const favouriteNameElement = template.content.querySelector(".name-of-secondary-block")
-        const favouriteTempElement = template.content.querySelector(".main-temperature");
-        const favouriteIconElement = template.content.querySelector(".main-icon-display");
-
-        const favouriteWindElement = template.content.querySelector(".main-city-wind");
-        const favouriteCloudElement = template.content.querySelector(".main-city-clouds");
-        const favouritePressureElement = template.content.querySelector(".main-city-pressure");
-        const favouriteHumidityElement = template.content.querySelector(".main-city-humidity");
-        const favouriteCoordinateElement = template.content.querySelector(".main-city-coord")
-
-        favouriteNameElement.innerHTML = data.name;
-        favouriteTempElement.innerHTML = `${Math.round(data.main.temp)}°C`;
-        favouriteIconElement.innerHTML = `<img src=" http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
-
-
-        favouriteWindElement.innerHTML = `${data.wind.speed} m/s,`;
-        favouriteCloudElement.innerHTML = `${data.weather[0].description}`;
-        favouritePressureElement.innerHTML = `${data.main.pressure} hpa`;
-        favouriteHumidityElement.innerHTML = `${data.main.humidity}%`;
-        favouriteCoordinateElement.innerHTML = `[${Number(data.coord.lat).toFixed(2)}, ${Number(data.coord.lon).toFixed(2)}]`;
-
-        const clone = template.content.querySelector('div').cloneNode(true);
-        const newTemplate = document.querySelector("#my-city");
-        newTemplate.appendChild(clone);
-
+        title.innerHTML = data.name;
+        temp.innerHTML = `${Math.round(data.main.temp)}°C`;
+        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        wind.innerHTML = `${data.wind.speed} m/s,`;
+        description.innerHTML = `${data.weather[0].description}`;
+        hpa.innerHTML = `${data.main.pressure} hpa`;
+        humidity.innerHTML = `${data.main.humidity}%`;
+        coordinants.innerHTML = `[${Number(data.coord.lat).toFixed(2)}, ${Number(data.coord.lon).toFixed(2)}]`;
     }
-
-
 }

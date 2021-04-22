@@ -14,47 +14,44 @@
 <section class="divide-section">
     <h2>Погода здесь</h2>
     <div class="refresh-button-display">
-        <button onclick="getCurrentLocation()" class="refresh-button">Обновить геолокацию</button>
+        <button onclick="UI.getCurrentLocation()" class="refresh-button">Обновить геолокацию</button>
     </div>
 
 </section>
 <section>
-    <div class="main-block" id="my-city" >
-<!--        <template id="main">-->
-            <div>
-                <h1 class="name-of-main-block"></h1>
-                <div class="devide-main">
-                    <div class="img-main">
-                        <img class="current-weather main-icon-display" width="40">
-                    </div>
-                    <div class="main-temperature">
-                    </div>
+    <div class="main-block" id="my-city">
+        <div>
+            <h1 id="name-of-main-block"></h1>
+            <div class="devide-main">
+                <div class="img-main">
+                    <img class="current-weather" id = "main-icon-display" src ="" width="40">
                 </div>
-
+                <div class="main-temperature">
+                </div>
             </div>
-            <ul>
-                <li>
-                    <div class="inside-text">Ветер</div>
-                    <div class="wind-and-stuff main-city-wind"></div>
-                </li>
-                <li>
-                    <div class="inside-text">Облачность</div>
-                    <div class="wind-and-stuff main-city-clouds"></div>
-                </li>
-                <li>
-                    <div class="inside-text">Давление</div>
-                    <div class="wind-and-stuff main-city-pressure"></div>
-                </li>
-                <li>
-                    <div class="inside-text">Влажность</div>
-                    <div class="wind-and-stuff main-city-humidity"></div>
-                </li>
-                <li>
-                    <div class="inside-text">Координаты</div>
-                    <div class="wind-and-stuff main-city-coord"></div>
-                </li>
-            </ul>
-<!--        </template>-->
+        </div>
+        <ul>
+            <li>
+                <div class="inside-text">Ветер</div>
+                <div class="wind-and-stuff main-city-wind"></div>
+            </li>
+            <li>
+                <div class="inside-text">Облачность</div>
+                <div class="wind-and-stuff main-city-clouds"></div>
+            </li>
+            <li>
+                <div class="inside-text">Давление</div>
+                <div class="wind-and-stuff main-city-pressure"></div>
+            </li>
+            <li>
+                <div class="inside-text">Влажность</div>
+                <div class="wind-and-stuff main-city-humidity"></div>
+            </li>
+            <li>
+                <div class="inside-text">Координаты</div>
+                <div class="wind-and-stuff main-city-coord"></div>
+            </li>
+        </ul>
     </div>
 </section>
 <section class="between-main-secondary">

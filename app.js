@@ -23,6 +23,10 @@ button.addEventListener("click", () => {
 window.addEventListener("DOMContentLoaded", () => {
   const dataSaved = ui.getFromLS();
   const citiesPromises = [];
+
+  ui.requestWeatherByLocation().then((data) => ui.populateMainUI(data));
+
+
   dataSaved.forEach((city)=>{
     citiesPromises.push(ft.getCurrent(city))
   })
