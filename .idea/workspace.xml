@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui.js" afterDir="false" />
     </list>
-    <list id="139aa278-3fe6-4278-b506-506efe71d493" name="Changes by berns" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui.js" afterDir="false" />
-    </list>
+    <list id="139aa278-3fe6-4278-b506-506efe71d493" name="Changes by berns" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,20 +33,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/ui.js">
-      <ranges>
-        <range start1="20" end1="22" start2="20" end2="22" changelist="139aa278-3fe6-4278-b506-506efe71d493" />
-        <range start1="32" end1="35" start2="32" end2="39" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="39" end1="41" start2="43" end2="43" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="62" end1="63" start2="64" end2="64" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="76" end1="77" start2="77" end2="77" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="98" end1="114" start2="98" end2="106" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="115" end1="125" start2="107" end2="115" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-        <range start1="126" end1="128" start2="116" end2="116" changelist="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1oyFA7yYz2GIAHCx9GMGqv96Sih" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -94,7 +79,9 @@
       <workItem from="1618502197597" duration="3452000" />
       <workItem from="1618512339964" duration="1124000" />
       <workItem from="1619012282899" duration="4955000" />
-      <workItem from="1619099378330" duration="11032000" />
+      <workItem from="1619099378330" duration="13091000" />
+      <workItem from="1619524776233" duration="4008000" />
+      <workItem from="1619546848565" duration="2024000" />
     </task>
     <servers />
   </component>

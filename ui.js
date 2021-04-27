@@ -5,6 +5,21 @@ class UI {
         this.defaultCity = ["London"];
     }
 
+    handleKeyPress(e){
+        let key=e.keyCode || e.which;
+        if (key === 13){
+            this.addCityByName();
+            onclick = document.getElementById('#searchUser').value = '';
+        }
+    }
+
+    addCityByName(name){
+        let cityName = name;
+        document.getElementById('#searchUser').value;
+        onclick = document.getElementById('#searchUser').value = '';
+        addCityCard(cityName);
+    }
+
     getCurrentLocation() {
         return new Promise((resolve, reject) => {
             navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude}}) => {
@@ -24,17 +39,15 @@ class UI {
 
     }
 
-    clearUI() {
-        uiContainer.innerHTML = "";
-    }
 
     saveToLS(data) {
         let cityNames = this.getFromLS();
         console.log(data);
-        if(cityNames.find(city => city === data) === data){
-            return new Error("City already exists")
+        if(cityNames.find(city => city === data)){
+            throw new Error("City already exists");
         }
         else {
+            cityNames.push(data);
             localStorage.setItem("city", JSON.stringify(cityNames));
         }
     }
@@ -76,7 +89,7 @@ class UI {
 
         favouriteNameElement.innerHTML = data.name;
         favouriteTempElement.innerHTML = `${Math.round(data.main.temp)}°C`;
-        favouriteIconElement.innerHTML = `<img src=" http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
+        favouriteIconElement.innerHTML = `<img src=" https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="80px">`;
 
 
         favouriteWindElement.innerHTML = `${data.wind.speed} m/s,`;
@@ -107,7 +120,7 @@ class UI {
 
         title.innerHTML = data.name;
         temp.innerHTML = `${Math.round(data.main.temp)}°C`;
-        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         wind.innerHTML = `${data.wind.speed} m/s,`;
         description.innerHTML = `${data.weather[0].description}`;
         hpa.innerHTML = `${data.main.pressure} hpa`;

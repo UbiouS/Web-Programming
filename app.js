@@ -11,10 +11,15 @@ button.addEventListener("click", () => {
   const currentVal = search.value;
 
   ft.getCurrent(currentVal).then((data) => {
-    //call a UI method
-    ui.populateUI(data);
-    //call saveToLS
-    ui.saveToLS(data.name);
+    try{
+      //call saveToLS
+      ui.saveToLS(data.name);
+      //call a UI method
+      ui.populateUI(data);
+    }
+    catch (e){
+      alert(e.message);
+    }
   });
 });
 
