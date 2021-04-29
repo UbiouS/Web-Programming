@@ -14,7 +14,8 @@
 <section class="divide-section">
     <h2>Погода здесь</h2>
     <div class="refresh-button-display">
-        <button onclick="ui.requestWeatherByLocation()" class="refresh-button">Обновить геолокацию</button>
+        <button onclick="ui.requestWeatherByLocation()"
+                class="refresh-button">Обновить геолокацию</button>
     </div>
 
 </section>
@@ -28,7 +29,8 @@
             <h1 id="name-of-main-block"></h1>
             <div class="devide-main">
                 <div class="img-main">
-                    <img class="current-weather" id = "main-icon-display" src ="" width="40">
+                    <img class="current-weather" id = "main-icon-display"
+                         src ="" width="40">
                 </div>
                 <div class="main-temperature">
                 </div>
@@ -62,7 +64,8 @@
     <div><h2>Избранное</h2></div>
     <div id="city-form" class="add-city" onsubmit="(e) => e.preventDefault()">
         <div class="line-for-city-display">
-            <input  class="input-line" type="text" id="searchUser" onclick="this.value=''"
+            <input  class="input-line" type="text" id="searchUser"
+                    onclick="this.value=''"
                     name="city-name" placeholder="Добавить новый город"
                     onkeypress="handleKeyPress(event)">
         </div>

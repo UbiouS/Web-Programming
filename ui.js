@@ -18,6 +18,7 @@ class UI {
 
     requestWeatherByLocation() {
         return this.getCurrentLocation().then(({latitude, longitude}) => {
+            getWeatherByCoordinateFromBack(latitude, longitude);
             return Fetch.getByLocation(latitude, longitude)
         })
 
