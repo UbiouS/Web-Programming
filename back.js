@@ -15,5 +15,6 @@ function addCityToStorage(city) {
 
 
 function deleteCityFromStorage(city) {
-    fetch(`${BACK_URL}/favourites?cityName=${city}`, {method: 'DELETE'});
+    const encodedCity = encodeURIComponent(city);
+    fetch(`${BACK_URL}/favourites?cityName=${encodedCity}`, {method: 'DELETE'});
 }

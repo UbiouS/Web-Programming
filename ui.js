@@ -29,11 +29,11 @@ class UI {
 
     saveToLS(data) {
         let cityNames = this.getFromLS();
-        console.log(data);
         if(cityNames.find(city => city === data)){
             throw new Error("City already exists");
         }
         else {
+            addCityToStorage(data);
             cityNames.push(data);
             localStorage.setItem("city", JSON.stringify(cityNames));
         }
@@ -53,6 +53,7 @@ class UI {
 
     deleteFromLS(cityName){
         const cities = this.getFromLS();
+        deleteCityFromStorage(cityName);
         const filteredCities = cities.filter(city => city !== cityName);
         localStorage.setItem("city", JSON.stringify(filteredCities));
     }

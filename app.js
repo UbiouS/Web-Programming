@@ -20,7 +20,7 @@ const search = document.getElementById("searchUser");
 const button = document.getElementById("submit");
 button.addEventListener("click", () => {
   const currentVal = search.value;
-
+  console.log(currentVal);
   ft.getCurrent(currentVal).then((data) => {
     try{
       //call saveToLS
@@ -58,8 +58,9 @@ function handleKeyPress(e) {
   let key=e.keyCode || e.which;
   if (key === 13){
     curr = document.getElementById("searchUser");
+    console.log(curr);
     onclick = document.getElementById('searchUser').value = '';
-    ft.getCurrent(curr).then((data) => {
+    ft.getCurrent(curr.value).then((data) => {
       try{
         //call saveToLS
         ui.saveToLS(data.name);
