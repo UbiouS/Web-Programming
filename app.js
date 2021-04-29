@@ -3,21 +3,8 @@
 const ft = new Fetch();
 const ui = new UI();
 
-function handleKeyPress(e){
-  let key=e.keyCode || e.which;
-  if (key === 13){
-    this.addCityByName();
-    onclick = document.getElementById('#searchUser').value = '';
-  }
-}
 
 
-function addCityByName(name){
-  let cityName = name;
-  document.getElementById('#searchUser').value;
-  onclick = document.getElementById('#searchUser').value = '';
-  addCityCard(cityName);
-}
 
 function cityLoader() {
   const mainCityLoader = document.querySelector(".main-block");
@@ -66,3 +53,22 @@ window.addEventListener("DOMContentLoaded", () => {
     cities?.forEach((city) => ui.populateUI(city));
   })
 });
+
+function handleKeyPress(e) {
+  let key=e.keyCode || e.which;
+  if (key === 13){
+    curr = document.getElementById("searchUser");
+    onclick = document.getElementById('searchUser').value = '';
+    ft.getCurrent(curr).then((data) => {
+      try{
+        //call saveToLS
+        ui.saveToLS(data.name);
+        //call a UI method
+        ui.populateUI(data);
+      }
+      catch (e){
+        alert(e.message);
+      }
+    });
+  }
+}

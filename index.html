@@ -62,7 +62,9 @@
     <div><h2>Избранное</h2></div>
     <div id="city-form" class="add-city" onsubmit="(e) => e.preventDefault()">
         <div class="line-for-city-display">
-            <input  class="input-line" type="text" id="searchUser" name="city-name" placeholder="Добавить новый город" onkeypress="handleKeyPress(event)">
+            <input  class="input-line" type="text" id="searchUser" onclick="this.value=''"
+                    name="city-name" placeholder="Добавить новый город"
+                    onkeypress="handleKeyPress(event)">
         </div>
         <div class="button-part">
             <button class="plus-city" id="submit" type="submit">+</button>
