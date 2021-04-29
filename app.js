@@ -3,6 +3,30 @@
 const ft = new Fetch();
 const ui = new UI();
 
+function handleKeyPress(e){
+  let key=e.keyCode || e.which;
+  if (key === 13){
+    this.addCityByName();
+    onclick = document.getElementById('#searchUser').value = '';
+  }
+}
+
+
+function addCityByName(name){
+  let cityName = name;
+  document.getElementById('#searchUser').value;
+  onclick = document.getElementById('#searchUser').value = '';
+  addCityCard(cityName);
+}
+
+function cityLoader() {
+  const mainCityLoader = document.querySelector(".main-block");
+  const loader = document.querySelector('.loader');
+
+  loader.style.display = 'none';
+  mainCityLoader.style.display = "grid";
+}
+
 //add event listeners//
 
 const search = document.getElementById("searchUser");
@@ -29,7 +53,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const dataSaved = ui.getFromLS();
   const citiesPromises = [];
 
-  ui.requestWeatherByLocation().then((data) => ui.populateMainUI(data));
+  ui.requestWeatherByLocation().then((data) => {
+    cityLoader();
+    ui.populateMainUI(data)});
 
 
   dataSaved.forEach((city)=>{

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88ba5f6-49cc-462b-b837-e045ab9fcbc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/back.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui.js" afterDir="false" />
     </list>
     <list id="139aa278-3fe6-4278-b506-506efe71d493" name="Changes by berns" comment="" />
@@ -49,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../web/WeatherWebServer-main" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -81,7 +84,11 @@
       <workItem from="1619012282899" duration="4955000" />
       <workItem from="1619099378330" duration="13091000" />
       <workItem from="1619524776233" duration="4008000" />
-      <workItem from="1619546848565" duration="2024000" />
+      <workItem from="1619546848565" duration="2847000" />
+      <workItem from="1619631496173" duration="3385000" />
+      <workItem from="1619636826619" duration="607000" />
+      <workItem from="1619637646533" duration="3828000" />
+      <workItem from="1619684070871" duration="8470000" />
     </task>
     <servers />
   </component>

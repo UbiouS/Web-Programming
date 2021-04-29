@@ -2,23 +2,10 @@ class UI {
     constructor() {
         this.uiContainer = document.getElementById("content");
         this.city;
-        this.defaultCity = ["London"];
     }
 
-    handleKeyPress(e){
-        let key=e.keyCode || e.which;
-        if (key === 13){
-            this.addCityByName();
-            onclick = document.getElementById('#searchUser').value = '';
-        }
-    }
 
-    addCityByName(name){
-        let cityName = name;
-        document.getElementById('#searchUser').value;
-        onclick = document.getElementById('#searchUser').value = '';
-        addCityCard(cityName);
-    }
+
 
     getCurrentLocation() {
         return new Promise((resolve, reject) => {

@@ -14,9 +14,13 @@
 <section class="divide-section">
     <h2>Погода здесь</h2>
     <div class="refresh-button-display">
-        <button onclick="ui.getCurrentLocation()" class="refresh-button">Обновить геолокацию</button>
+        <button onclick="ui.requestWeatherByLocation()" class="refresh-button">Обновить геолокацию</button>
     </div>
 
+</section>
+<section class="loader">
+    <div class="loader-block"></div>
+    <h2>Загрузка</h2>
 </section>
 <section>
     <div class="main-block" id="my-city">
@@ -58,7 +62,7 @@
     <div><h2>Избранное</h2></div>
     <div id="city-form" class="add-city" onsubmit="(e) => e.preventDefault()">
         <div class="line-for-city-display">
-            <input class="input-line" type="text" id="searchUser" name="city-name" placeholder="Добавить новый город">
+            <input  class="input-line" type="text" id="searchUser" name="city-name" placeholder="Добавить новый город" onkeypress="handleKeyPress(event)">
         </div>
         <div class="button-part">
             <button class="plus-city" id="submit" type="submit">+</button>
@@ -111,5 +115,7 @@
 <script src="fetch.js"></script>
 <script src="ui.js"></script>
 <script src="app.js"></script>
+<script src="back.js"></script>
+<script src="handle.js"></script>
 <script>ui.requestWeatherByLocation()</script>
 </html>
