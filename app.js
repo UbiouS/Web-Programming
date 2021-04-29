@@ -15,24 +15,32 @@ function cityLoader() {
 }
 
 //add event listeners//
+document.addEventListener("DOMContentLoaded", () => {
+  const search = document.getElementById("searchUser");
+  const button = document.getElementById("submit");
 
-const search = document.getElementById("searchUser");
-const button = document.getElementById("submit");
-button.addEventListener("click", () => {
-  const currentVal = search.value;
-  console.log(currentVal);
-  ft.getCurrent(currentVal).then((data) => {
-    try{
-      //call saveToLS
-      ui.saveToLS(data.name);
-      //call a UI method
-      ui.populateUI(data);
-    }
-    catch (e){
-      alert(e.message);
-    }
+  button.addEventListener("click", () => {
+    const currentVal = search.value;
+    console.log(currentVal);
+    ft.getCurrent(currentVal).then((data) => {
+      if(data.cod == '404'){
+        alert(data.message);
+        return data
+      }
+      try{
+        //call saveToLS
+        ui.saveToLS(data.name);
+        //call a UI method
+        ui.populateUI(data);
+      }
+      catch (e){
+        alert(e.message);
+      }
+    });
   });
+
 });
+
 
 //event listener for local storage
 
@@ -57,18 +65,24 @@ window.addEventListener("DOMContentLoaded", () => {
 function handleKeyPress(e) {
   let key=e.keyCode || e.which;
   if (key === 13){
-    curr = document.getElementById("searchUser");
-    console.log(curr);
-    onclick = document.getElementById('searchUser').value = '';
+    const curr = document.getElementById("searchUser");
+    console.log(curr, curr.value);
     ft.getCurrent(curr.value).then((data) => {
-      try{
-        //call saveToLS
-        ui.saveToLS(data.name);
-        //call a UI method
-        ui.populateUI(data);
+      if(data.cod == '404'){
+        alert(data.message);
+        return data
       }
-      catch (e){
-        alert(e.message);
+      else {
+        try{
+          //call saveToLS
+          ui.saveToLS(data.name);
+          //call a UI method
+          ui.populateUI(data);
+        }
+        catch (e){
+          alert(e.message);
+        }
+        onclick = document.getElementById('searchUser').value = '';
       }
     });
   }

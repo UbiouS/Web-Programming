@@ -4,9 +4,6 @@ class UI {
         this.city;
     }
 
-
-
-
     getCurrentLocation() {
         return new Promise((resolve, reject) => {
             navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude}}) => {
@@ -29,6 +26,7 @@ class UI {
 
     saveToLS(data) {
         let cityNames = this.getFromLS();
+
         if(cityNames.find(city => city === data)){
             throw new Error("City already exists");
         }
